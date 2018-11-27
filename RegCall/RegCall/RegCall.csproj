@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{168C826B-D7DB-4BCB-9607-68ADF83D9D6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RegCall</RootNamespace>
+    <AssemblyName>RegCall</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>RegCall.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Ico\call_w.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\CheckLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CheckLists.Designer.cs">
+      <DependentUpon>CheckLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InfoAdicionais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InfoAdicionais.Designer.cs">
+      <DependentUpon>InfoAdicionais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InfoDesatualizadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InfoDesatualizadas.Designer.cs">
+      <DependentUpon>InfoDesatualizadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\UC_CKList_Field.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_CKList_Field.Designer.cs">
+      <DependentUpon>UC_CKList_Field.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_CKList_Telefonia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_CKList_Telefonia.Designer.cs">
+      <DependentUpon>UC_CKList_Telefonia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Sobre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_Sobre.Designer.cs">
+      <DependentUpon>UC_Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Configuracoes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_Configuracoes.Designer.cs">
+      <DependentUpon>UC_Configuracoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_ContatosUteis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_ContatosUteis.Designer.cs">
+      <DependentUpon>UC_ContatosUteis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Verificacoes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_Verificacoes.Designer.cs">
+      <DependentUpon>UC_Verificacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Utilidades.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_Utilidades.Designer.cs">
+      <DependentUpon>UC_Utilidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_LojaHub.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_LojaHub.Designer.cs">
+      <DependentUpon>UC_LojaHub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Inicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_Inicio.Designer.cs">
+      <DependentUpon>UC_Inicio.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\CheckLists.resx">
+      <DependentUpon>CheckLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InfoAdicionais.resx">
+      <DependentUpon>InfoAdicionais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InfoDesatualizadas.resx">
+      <DependentUpon>InfoDesatualizadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControl\UC_CKList_Field.resx">
+      <DependentUpon>UC_CKList_Field.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UC_CKList_Telefonia.resx">
+      <DependentUpon>UC_CKList_Telefonia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UC_Sobre.resx">
+      <DependentUpon>UC_Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UC_Configuracoes.resx">
+      <DependentUpon>UC_Configuracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UC_ContatosUteis.resx">
+      <DependentUpon>UC_ContatosUteis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UC_Verificacoes.resx">
+      <DependentUpon>UC_Verificacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UC_LojaHub.resx">
+      <DependentUpon>UC_LojaHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UC_Inicio.resx">
+      <DependentUpon>UC_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UC_Utilidades.resx">
+      <DependentUpon>UC_Utilidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ico\call.ico" />
+    <Content Include="Ico\call_w.ico" />
+    <Content Include="settings.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
